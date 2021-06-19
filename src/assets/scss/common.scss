@@ -1,0 +1,177 @@
+/* common scss */
+
+@import "./var.scss";
+@import "./mixin.scss";
+
+
+/* z-index
+ 
+header : 100;
+
+*/
+
+body {
+  padding-top: 130px;
+}
+
+// header
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    @include siteWidth;
+  }
+
+  background: #fff;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+
+  //   logo
+  #logo {
+    h1 {
+      a {
+        img {}
+      }
+    }
+  }
+
+  //   nav
+  nav {
+    flex: 1 0 auto;
+
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 70px;
+
+      li {
+        transition: 0.3s;
+
+        &:hover {
+          color: $fontColorPrimary;
+          transform: scale(1.2);
+        }
+
+        a {
+          display: inline-block;
+          font-size: $fontSizeNormal;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+
+  //   usermenu
+  .user_menu {
+    ul {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 70px;
+
+      li {
+        flex: 1 0 auto;
+        text-align: center;
+        width: 67px;
+
+        &:after {
+          display: none;
+          position: absolute;
+          content: '';
+          font-size: $fontSizeSmall;
+          border-radius: 5px;
+          padding: 2px 3px;
+          color: white;
+          background: #000;
+        }
+
+        &:nth-child(1)::after {
+          content: '장바구니';
+          top: 60px;
+          left: 10px;
+        }
+
+        &:nth-child(2):after {
+          content: '마이페이지';
+          top: 60px;
+          left: 70px;
+        }
+
+        &:nth-child(3):after {
+          content: '로그인';
+          top: 60px;
+          left: 148px;
+        }
+
+        &:nth-child(1):hover::after {
+          display: block;
+        }
+
+        &:nth-child(2):hover::after {
+          display: block;
+        }
+
+        &:nth-child(3):hover::after {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+//header
+
+/* footer */
+footer {
+  background: #fafafa;
+
+  .inner {
+    @include siteWidth;
+
+    .ftop {
+      position: relative;
+
+      ul {
+        display: flex;
+
+        li {
+          margin-right: 50px;
+
+          &:first-child {
+            color: $fontColorPrimary;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            font-size: $fontSizeNormal;
+          }
+        }
+      }
+
+      .insta {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        img {
+          margin-right: 15px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .fbottom {
+      font-size: $fontSizeSmall;
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+/* main scss */
+#mainbanner {
+  position: relative;
+  height: 700px;
+  background-image: url("./assets/img/main/main-banner01.png");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 900px 100px;
+  background-color: #fff6d7;
+}
+
+#mainbanner .main_text {
+  position: absolute;
+  top: 30%;
+  left: 230px;
+}
+
+#mainbanner .main_text h2 {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+#mainbanner .main_text p {
+  font-size: 16px;
+  margin: 20px 0 30px;
+}
+
+#mainbanner .main_text a {
+  position: absolute;
+  font-size: 18px;
+  color: #f9ce42;
+}
+
+#mainbanner .main_text a:after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  background-image: url("./assets/img/main/btn-more01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,48 @@
+/* main scss */
+
+@import "./var.scss";
+
+#mainbanner {
+  position: relative;
+  height: 700px;
+  background-image: url("./assets/img/main/main-banner01.png");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 900px 100px;
+  background-color: $layoutBg;
+
+  .main_text {
+    position: absolute;
+    top: 30%;
+    left: 230px;
+
+    h2 {
+      font-size: $titleSizeBigest;
+      font-weight: bold;
+      line-height: 70px;
+    }
+
+    p {
+      font-size: $fontSizeNormal;
+      margin: 20px 0 30px;
+    }
+
+    a {
+      position: absolute;
+      font-size: $fontSizeMid;
+      color: $fontColorPrimary;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 10%;
+        width: 36px;
+        height: 36px;
+        margin-left: 10px;
+        background-image: url('./assets/img/main/btn-more01.png');
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* common scss */
+/* mixin scss*/
+/* z-index
+ 
+header : 100;
+
+*/
+body {
+  padding-top: 130px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  -webkit-box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+
+header nav ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav ul li:hover {
+  color: #f9ce42;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+header nav ul li a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+header .user_menu ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+
+header .user_menu ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  text-align: center;
+  width: 67px;
+}
+
+header .user_menu ul li:after {
+  display: none;
+  position: absolute;
+  content: '';
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 2px 3px;
+  color: white;
+  background: #000;
+}
+
+header .user_menu ul li:nth-child(1)::after {
+  content: '장바구니';
+  top: 60px;
+  left: 10px;
+}
+
+header .user_menu ul li:nth-child(2):after {
+  content: '마이페이지';
+  top: 60px;
+  left: 70px;
+}
+
+header .user_menu ul li:nth-child(3):after {
+  content: '로그인';
+  top: 60px;
+  left: 148px;
+}
+
+header .user_menu ul li:nth-child(1):hover::after {
+  display: block;
+}
+
+header .user_menu ul li:nth-child(2):hover::after {
+  display: block;
+}
+
+header .user_menu ul li:nth-child(3):hover::after {
+  display: block;
+}
+
+/* footer */
+footer {
+  background: #fafafa;
+}
+
+footer .inner {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer .inner .ftop {
+  position: relative;
+}
+
+footer .inner .ftop ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .inner .ftop ul li {
+  margin-right: 50px;
+}
+
+footer .inner .ftop ul li:first-child {
+  color: #f9ce42;
+}
+
+footer .inner .ftop ul li:last-child {
+  margin-right: 0;
+}
+
+footer .inner .ftop ul li a {
+  font-size: 16px;
+}
+
+footer .inner .ftop .insta {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+footer .inner .ftop .insta img {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+footer .inner .fbottom {
+  font-size: 13px;
+  margin-top: 30px;
+}

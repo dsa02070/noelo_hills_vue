@@ -1,0 +1,8 @@
+/* mixin scss*/
+
+@mixin siteWidth {
+  width: $siteWidth;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
