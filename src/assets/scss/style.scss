@@ -4,4 +4,12 @@
 @import "./mixin.scss";
 @import "./initial.scss";
 @import "./common.scss";
+@import "./layout.scss";
+@import "./component.scss";
+
+// main page
 @import "./main.scss";
+
+// subpage
+@import "./shop.scss";
+@import "./ourstory.scss";

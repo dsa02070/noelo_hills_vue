@@ -1,15 +1,17 @@
 /* main scss */
 
 @import "./var.scss";
+@import "./mixin.scss";
 
+// mainbanner
 #mainbanner {
-  position: relative;
   height: 700px;
-  background-image: url("./assets/img/main/main-banner01.png");
-  background-size: 500px;
-  background-repeat: no-repeat;
-  background-position: 900px 100px;
   background-color: $layoutBg;
+
+  .inner {
+    position: relative;
+    @include siteWidth;
+  }
 
   .main_text {
     position: absolute;
@@ -26,23 +28,88 @@
       font-size: $fontSizeNormal;
       margin: 20px 0 30px;
     }
+  }
 
-    a {
-      position: absolute;
-      font-size: $fontSizeMid;
-      color: $fontColorPrimary;
+  .banner_bg {
+    background-image: url("./assets/img/main/main-banner01.png");
+    height: 600px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 700px 100px;
+  }
+}
 
-      &:after {
-        content: '';
-        position: absolute;
-        top: 10%;
-        width: 36px;
-        height: 36px;
-        margin-left: 10px;
-        background-image: url('./assets/img/main/btn-more01.png');
-        background-size: contain;
-        background-repeat: no-repeat
+// our promise
+#our_promise {
+  @include siteWidth;
+  padding: 80px 30px;
+
+  .title {
+    text-align: center;
+  }
+
+  .list_wrap {
+    display: flex;
+    width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 60px 0;
+    text-align: center;
+
+    h4 {
+      font-size: $fontSizeNormal;
+      font-weight: 500;
+      line-height: 24px;
+      margin: 20px 0 8px;
+    }
+  }
+}
+
+#our_products {
+  @include siteWidth;
+  margin-bottom: 60px;
+
+  .box_wrap {
+    .box {
+      &:first-child {
+        align-self: center;
+        text-align: left;
+        background: none;
+        padding-left: 60px;
+        box-sizing: border-box;
       }
     }
   }
+}
+
+#common {
+  @include siteWidth;
+  display: flex;
+  padding: 60px 0px;
+
+  &:nth-of-type(even) {
+    .img_area {
+      text-align: right;
+    }
+  }
+
+  .text_area {
+    flex: 1 0 auto;
+    padding-left: 100px;
+    padding-top: 100px;
+    box-sizing: border-box;
+
+    .maintitle {
+      margin: 40px 0;
+    }
+
+    .text_small {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.sns {
+  padding: 120px 0;
+  text-align: center;
 }

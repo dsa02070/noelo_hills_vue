@@ -1,0 +1,132 @@
+/* components scss */
+
+@import "./var.scss";
+
+// main btn
+.main_btn {
+  position: relative;
+  font-size: $fontSizeMid;
+  font-weight: 500;
+  color: $fontColorPrimary;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    background-image: url('./assets/img/main/btn-more01.png');
+    background-size: contain;
+    background-repeat: no-repeat
+  }
+}
+
+// sub btn
+.sub_btn {
+  position: relative;
+  font-size: $fontSizeMid;
+  font-weight: 500;
+  color: $fontColorBasic;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    background-image: url('./assets/img/main/btn-more02.png');
+    background-size: contain;
+    background-repeat: no-repeat
+  }
+}
+
+
+// title
+.subtitle {
+  font-size: $fontSizeMid;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  color: $fontColorPrimary;
+}
+
+.maintitle {
+  font-size: $titleSizeBig;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.text_small {
+  font-size: $fontSizeSmall;
+  line-height: 24px;
+}
+
+.sub_banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .sub_page_title {
+    font-size: $titleSizeBigest;
+    font-weight: bold;
+  }
+}
+
+
+
+// box component
+.box_wrap {
+  display: flex;
+  justify-content: flex-start;
+
+  .box {
+    flex: 0 1 31.3333%;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 3%;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: $layoutBg;
+
+    img {
+      width: 100%;
+    }
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+
+    // box title
+    .boxtitle {
+      font-size: $fontSizeMid;
+      font-weight: 500;
+      margin: 12px 0 28px;
+
+    }
+
+    .boxtext {
+      font-size: $fontSizeSmall;
+    }
+
+    .main_btn {
+      padding-right: 24px;
+    }
+  }
+}
+
+// location
+.location {
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      font-size: $fontSizeSmall;
+      margin-right: 20px;
+    }
+  }
+}

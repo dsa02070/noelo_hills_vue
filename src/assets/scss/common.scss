@@ -30,23 +30,15 @@ header {
   background: #fff;
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
 
-  //   logo
-  #logo {
-    h1 {
-      a {
-        img {}
-      }
-    }
-  }
-
   //   nav
   nav {
     flex: 1 0 auto;
 
-
     ul {
       display: flex;
-      justify-content: space-evenly;
+      width: 84%;
+      margin: 0 auto;
+      justify-content: space-between;
       align-items: center;
       height: 70px;
 
@@ -127,12 +119,35 @@ header {
 
 //header
 
+/* sub html top common */
+.top_common {
+  .inner {
+    @include siteWidth;
+  }
+
+  .sub_banner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 316px;
+  }
+
+  .box_wrap {
+    @include siteWidth;
+    flex-wrap: wrap;
+
+    .box {
+      margin-bottom: 60px;
+    }
+  }
+}
+
 /* footer */
 footer {
   background: #fafafa;
 
   .inner {
     @include siteWidth;
+    padding: 60px 30px;
 
     .ftop {
       position: relative;
@@ -146,6 +161,7 @@ footer {
           &:first-child {
             color: $fontColorPrimary;
           }
+
 
           &:last-child {
             margin-right: 0;

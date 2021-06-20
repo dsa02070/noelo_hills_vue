@@ -1,0 +1,136 @@
+/* components scss */
+.main_btn {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f9ce42;
+}
+
+.main_btn:after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  background-image: url("./assets/img/main/btn-more01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sub_btn {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: #676d72;
+}
+
+.sub_btn:after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  background-image: url("./assets/img/main/btn-more02.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subtitle {
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  color: #f9ce42;
+}
+
+.maintitle {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.text_small {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.sub_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub_banner .sub_page_title {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.box_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.box_wrap .box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31.3333%;
+          flex: 0 1 31.3333%;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 3%;
+  padding-bottom: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  background: #fff6d7;
+}
+
+.box_wrap .box img {
+  width: 100%;
+}
+
+.box_wrap .box:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.box_wrap .box .boxtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 12px 0 28px;
+}
+
+.box_wrap .box .boxtext {
+  font-size: 14px;
+}
+
+.box_wrap .box .main_btn {
+  padding-right: 24px;
+}
+
+.location {
+  margin-bottom: 20px;
+}
+
+.location ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.location ul li {
+  font-size: 14px;
+  margin-right: 20px;
+}

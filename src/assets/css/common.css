@@ -44,9 +44,11 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  width: 84%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -93,7 +95,7 @@ header .user_menu ul li:after {
   display: none;
   position: absolute;
   content: '';
-  font-size: 13px;
+  font-size: 14px;
   border-radius: 5px;
   padding: 2px 3px;
   color: white;
@@ -130,6 +132,35 @@ header .user_menu ul li:nth-child(3):hover::after {
   display: block;
 }
 
+/* sub html top common */
+.top_common .inner {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top_common .sub_banner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 316px;
+}
+
+.top_common .box_wrap {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.top_common .box_wrap .box {
+  margin-bottom: 60px;
+}
+
 /* footer */
 footer {
   background: #fafafa;
@@ -141,6 +172,7 @@ footer .inner {
   padding: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 60px 30px;
 }
 
 footer .inner .ftop {
@@ -181,6 +213,6 @@ footer .inner .ftop .insta img {
 }
 
 footer .inner .fbottom {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 30px;
 }
