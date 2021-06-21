@@ -37,10 +37,26 @@
   background-repeat: no-repeat;
 }
 
+.normal_btn {
+  font-size: 14px;
+  padding: 5px 20px;
+  border-radius: 17px;
+  color: #fff;
+  background: #f9ce42;
+}
+
+.bgyellow {
+  background-color: #fffaeb;
+}
+
+.bggray {
+  background-color: #f2f1ed;
+}
+
 .subtitle {
   font-size: 18px;
   letter-spacing: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #f9ce42;
 }
 
@@ -48,6 +64,22 @@
   font-size: 32px;
   line-height: 40px;
   font-weight: 500;
+}
+
+.text_title {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.text_mid {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text_normal {
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .text_small {
@@ -133,4 +165,66 @@
 .location ul li {
   font-size: 14px;
   margin-right: 20px;
+}
+
+select {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #676d72;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("./assets/img/honestreview/select_btn.png");
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0 10px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  color: #fff;
+  background: #f9ce42;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.page_num ul {
+  text-align: center;
+}
+
+.page_num ul .number:hover {
+  background: #f1f1f1;
+}
+
+.page_num ul li {
+  display: inline-block;
+}
+
+.page_num ul li:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.page_num ul li a {
+  padding: 0 10px;
 }

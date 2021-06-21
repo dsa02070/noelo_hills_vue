@@ -14,10 +14,10 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 100;
   background: #fff;
   -webkit-box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
 }
 
 header .inner {
@@ -130,6 +130,11 @@ header .user_menu ul li:nth-child(2):hover::after {
 
 header .user_menu ul li:nth-child(3):hover::after {
   display: block;
+}
+
+header .user_menu ul li a {
+  display: inline-block;
+  width: 100%;
 }
 
 /* sub html top common */

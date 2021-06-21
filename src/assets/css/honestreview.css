@@ -1,0 +1,58 @@
+/* honestreview scss */
+.honestreview .sub_banner {
+  background-color: #fff5d6;
+  background-image: url("./assets/img/honestreview/sub_banner.png");
+}
+
+.honestreview table {
+  width: 1000px;
+  margin: 80px auto;
+}
+
+.honestreview table tr {
+  border: 1px solid #ccc;
+}
+
+.honestreview table tr th {
+  height: 90px;
+}
+
+.honestreview table tr th:nth-of-type(1) {
+  width: 5%;
+  background: #f1f1f1;
+}
+
+.honestreview table tr th:nth-of-type(2) {
+  width: 20%;
+}
+
+.honestreview table tr th:nth-of-type(3) {
+  width: 65%;
+}
+
+.honestreview table tr th:nth-of-type(4) {
+  width: 10%;
+}
+
+.honestreview table tr td {
+  padding: 10px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.honestreview table tr td:nth-of-type(1) {
+  background: #f1f1f1;
+}
+
+.honestreview table tr td:not(:nth-of-type(3)) {
+  text-align: center;
+}
+
+.honestreview table tr td h3 {
+  margin: 5px 0;
+}
+
+.honestreview table tr td img {
+  width: 90px;
+  border-radius: 10px;
+}

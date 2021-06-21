@@ -1,0 +1,22 @@
+/* login scss */
+.login h2 {
+  padding: 40px 0 60px;
+  text-align: center;
+}
+
+.login form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login form input {
+  width: 500px;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.login form .check {
+  text-align: left;
+}

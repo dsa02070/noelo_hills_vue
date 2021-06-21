@@ -16,4 +16,111 @@
   padding: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our_story .content .text_area {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 60px;
+}
+
+.our_story .content .text_area .text_title {
+  margin-bottom: 40px;
+}
+
+.our_story .content .text_area .maintitle {
+  margin-bottom: 40px;
+}
+
+.our_story .content .img_area img {
+  width: 100%;
+}
+
+.our_story .core_content {
+  text-align: center;
+  padding-bottom: 40px;
+  background: #f2f1ed;
+}
+
+.our_story .core_content .title {
+  text-align: center;
+  padding: 80px 0 40px;
+}
+
+.our_story .core_content .bottom_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: left;
+}
+
+.our_story .core_content .bottom_text .left {
+  position: relative;
+}
+
+.our_story .core_content .bottom_text .left .text_small::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  background-image: url("./assets/img/ourstory/icon01.png");
+  width: 29px;
+  height: 46px;
+}
+
+.our_story .core_content .bottom_text .right {
+  position: relative;
+}
+
+.our_story .core_content .bottom_text .right .text_small::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  background-image: url("./assets/img/ourstory/icon02.png");
+  width: 33px;
+  height: 31px;
+}
+
+.our_story .text_banner {
+  text-align: center;
+  padding: 30px 0;
+  background: #fcca28;
+}
+
+.our_story .text_banner .text_normal {
+  color: #fff;
+}
+
+.our_story .meaning {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
+}
+
+.our_story .meaning .text_area {
+  padding: 0 0 0 100px;
+}
+
+.our_story .meaning .text_area .text_small {
+  font-size: 16px;
+  line-height: 28px;
 }

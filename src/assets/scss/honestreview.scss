@@ -1,0 +1,75 @@
+/* honestreview scss */
+.honestreview {
+  .sub_banner {
+    background-color: #fff5d6;
+    background-image: url('./assets/img/honestreview/sub_banner.png');
+  }
+
+  //   table
+  table {
+    width: 1000px;
+    margin: 80px auto 40px;
+
+    tbody {
+      tr {
+        &:hover {
+          background: $layoutBg;
+        }
+      }
+    }
+
+    tr {
+      border: 1px solid #ccc;
+
+      th {
+        height: 60px;
+
+        &:nth-of-type(1) {
+          width: 7%;
+          background: #f1f1f1;
+        }
+
+        &:nth-of-type(2) {
+          width: 20%;
+        }
+
+        &:nth-of-type(3) {
+          width: 63%;
+        }
+
+        &:nth-of-type(4) {
+          width: 10%;
+        }
+      }
+
+      td {
+        padding: 10px 0;
+        box-sizing: border-box;
+
+        &:nth-of-type(1) {
+          background: #f1f1f1;
+        }
+
+        &:not(:nth-of-type(3)) {
+          text-align: center;
+        }
+
+        h3 {
+          margin: 5px 0;
+        }
+
+        img {
+          width: 90px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  //table end
+
+  .search {
+    margin: 60px 0 120px;
+    text-align: center;
+  }
+}

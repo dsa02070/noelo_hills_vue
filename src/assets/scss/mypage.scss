@@ -1,0 +1,163 @@
+/* my page scss */
+.mypage {
+  h2 {
+    padding: 40px 0 60px;
+    text-align: center;
+  }
+
+  // saved
+  .saved {
+    @include siteWidth;
+    display: flex;
+    margin-bottom: 60px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+    .left {
+      flex: 1 0 auto;
+      margin-right: 40px;
+      padding-right: 40px;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+    }
+
+    .right {
+      flex: 1 0 auto;
+    }
+
+    ul {
+      li {
+        display: flex;
+        justify-content: space-between;
+        line-height: 40px;
+
+        span {
+          a {
+            height: 30px;
+            line-height: 24px;
+            padding: 2px 14px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  // my_order
+  .my_order {
+    @include siteWidth;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+    h3 {
+      border-bottom: 1px solid #ccc;
+      padding: 20px;
+      background: #f1f1f1;
+
+      em {
+        font-size: $fontSizeSmall;
+        color: $fontColorLight;
+      }
+    }
+
+    .order_info {
+      display: flex;
+      justify-content: space-between;
+      width: 1200px;
+      margin: 30px auto;
+
+      li {
+        text-align: center;
+        border-right: 1px solid #ccc;
+        padding: 0 110px;
+        box-sizing: border-box;
+
+        &:last-child {
+          border-right: 0;
+        }
+
+        p {
+          font-size: $fontSizeBig;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .btn_wrap {
+      text-align: center;
+      margin-bottom: 30px;
+
+      a {
+        border-radius: 10px;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  // menu_wrap
+  .menu_wrap {
+    @include siteWidth;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+
+    .menu {
+      flex: 0 0 32%;
+      padding: 30px 0;
+      text-align: center;
+      background: $layoutBg;
+      border-radius: 20px;
+
+      p {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  // list_menu
+  .list_menu {
+    @include siteWidth;
+    margin-bottom: 120px;
+
+    ul {
+      border-top: 1px solid #ccc;
+
+      li {
+        position: relative;
+        border-bottom: 1px solid #ccc;
+
+        &:hover {
+          background: #fafafa;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 40%;
+          right: 30px;
+          width: 10px;
+          height: 16px;
+          background-image: url('./assets/img/mypage/right_arrow.png');
+        }
+
+        a {
+          display: inline-block;
+          width: 100%;
+          padding: 30px 20px;
+
+          span {
+            font-size: $fontSizeSmall;
+            color: $fontColorLight;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

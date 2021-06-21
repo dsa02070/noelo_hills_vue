@@ -1,7 +1,5 @@
 /* components scss */
 
-@import "./var.scss";
-
 // main btn
 .main_btn {
   position: relative;
@@ -42,12 +40,58 @@
   }
 }
 
+//normal btn
+.normal_btn {
+  font-size: $fontSizeSmall;
+  padding: 5px 20px;
+  border-radius: 17px;
+  color: #fff;
+  background: $buttonColor;
+}
 
-// title
+// round btn
+.yellow_btn {
+  display: inline-block;
+  padding: 7px 14px;
+  color: #fff;
+  border-radius: 19px;
+  background: $buttonColor;
+}
+
+.gray_btn {
+  display: inline-block;
+  padding: 7px 14px;
+  color: #fff;
+  border-radius: 19px;
+  background: $buttonColorGray;
+}
+
+.white_btn {
+  display: inline-block;
+  padding: 7px 14px;
+  color: $fontColorBasic;
+  background: #fff;
+  border-radius: 19px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+// bg color
+
+.bgyellow {
+  background-color: #fffaeb;
+}
+
+.bggray {
+  background-color: #f2f1ed;
+}
+
+
+// title, text component
 .subtitle {
   font-size: $fontSizeMid;
   letter-spacing: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: $fontColorPrimary;
 }
 
@@ -55,6 +99,22 @@
   font-size: $titleSizeBig;
   line-height: 40px;
   font-weight: 500;
+}
+
+.text_title {
+  font-size: $fontSizeBig;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.text_mid {
+  font-size: $fontSizeMid;
+  font-weight: 500;
+}
+
+.text_normal {
+  font-size: $fontSizeNormal;
+  line-height: 28px;
 }
 
 .text_small {
@@ -72,6 +132,7 @@
     font-weight: bold;
   }
 }
+
 
 
 
@@ -103,7 +164,6 @@
       font-size: $fontSizeMid;
       font-weight: 500;
       margin: 12px 0 28px;
-
     }
 
     .boxtext {
@@ -127,6 +187,73 @@
     li {
       font-size: $fontSizeSmall;
       margin-right: 20px;
+    }
+  }
+}
+
+
+// select style
+select {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  color: $fontColorBasic;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  appearance: none;
+  background-image: url('./assets/img/honestreview/select_btn.png');
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}
+
+// input box style
+input {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+// button style
+button {
+  width: 100px;
+  height: 40px;
+  font-size: $fontSizeNormal;
+  line-height: 40px;
+  color: #fff;
+  background: $buttonColor;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+//   page_num
+.page_num {
+  ul {
+    text-align: center;
+
+    .number {
+      &:hover {
+        background: #f1f1f1;
+      }
+    }
+
+    li {
+      display: inline-block;
+
+      &:nth-of-type(2) {
+        font-weight: bold;
+      }
+
+      a {
+        padding: 0 10px;
+      }
     }
   }
 }

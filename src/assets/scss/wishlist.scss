@@ -1,0 +1,266 @@
+/* wish list scss */
+
+.wishlist {
+  h2 {
+    padding: 20px 0 60px;
+    text-align: center;
+  }
+
+  //   benefit
+  .benefit {
+    @include siteWidth;
+    padding: 20px 30px;
+    border: 1px solid #ccc;
+
+    span {
+      font-size: $fontSizeNormal;
+      margin-right: 40px;
+
+      &:first-child {
+        padding-right: 40px;
+        border-right: 1px solid #ccc;
+      }
+
+      em {
+        margin-left: 14px;
+        color: $fontColorPrimary;
+      }
+    }
+  }
+
+  // product
+  .product {
+    @include siteWidth;
+    padding: 30px 0;
+    margin-top: 40px;
+
+    h4 {
+      padding-bottom: 20px;
+    }
+  }
+
+  // table
+  .item_table {
+    width: 100%;
+    margin: 30px 0 3px;
+
+    tr {
+      height: 220px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+
+      td {
+        &:nth-child(1) {
+          width: 7%;
+          text-align: center;
+        }
+
+        &:nth-of-type(2) {
+          width: 12%;
+
+          img {
+            width: 120px;
+            border-radius: 10px;
+          }
+        }
+
+        &:nth-child(3) {
+          width: 40%;
+        }
+
+        .saved {
+          margin: 10px 0 20px;
+
+          &::first-letter {
+            font-size: 9px;
+            padding: 0px 3px;
+            border-radius: 4px;
+            color: #fff;
+            background: rgb(151, 95, 151);
+          }
+        }
+
+        .count {
+          position: relative;
+          display: inline-block;
+
+          input {
+            width: 50px;
+            height: 40px;
+            margin: 0;
+          }
+
+          .upbtn {
+            position: absolute;
+            top: -4px;
+            left: 40px;
+          }
+
+          .downbtn {
+            position: absolute;
+            top: 15px;
+            left: 40px;
+          }
+        }
+
+        .change {
+          font-size: $fontSizeNormal;
+          margin-left: 50px;
+          margin-right: 10px;
+          padding: 6px 15px;
+          vertical-align: middle;
+          border-radius: 19px;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .sum {
+          font-size: $fontSizeNormal;
+          font-weight: 500;
+        }
+
+        &:nth-of-type(6) {
+          ul {
+            li {
+              text-align: center;
+
+              a {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //   table sum
+  .table_sum {
+    .sum_num {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 10px;
+      border-bottom: 1px solid #ccc;
+      background: #fafafa;
+
+      span {
+        em {
+          font-size: $titleSizeSmall;
+          color: $fontColorPrimary;
+        }
+      }
+    }
+
+    .info {
+      padding: 30px 0 15px 30px;
+
+      p {
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 30%;
+          left: -26px;
+          background-image: url('./assets/img/wishlist/info_icon.png');
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    .select_btn {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0 60px;
+      border-top: 1px solid #ccc;
+
+      .white_btn {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  //   total
+  .total {
+    text-align: center;
+    border-top: 1px solid #ccc;
+
+    .total_table {
+      width: 100%;
+
+      tr {
+        height: 60px;
+        border-bottom: 1px solid #ccc;
+
+        th {
+          font-size: $fontSizeNormal;
+          font-weight: 500;
+        }
+
+        td {
+          height: 90px;
+          font-size: $fontSizeBig;
+          font-weight: 500;
+
+          em {
+            color: $fontColorPrimary;
+          }
+        }
+      }
+    }
+
+    .btn_wrap {
+      padding: 30px 0;
+
+      a {
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 32px;
+        font-size: $fontSizeMid;
+
+        &:first-child {
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+
+  //   guide
+  .guide {
+    @include siteWidth;
+    margin: 80px auto 120px;
+
+    .top {
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    .text_mid {
+      margin-bottom: 20px;
+    }
+
+    p {
+      position: relative;
+      font-size: $fontSizeSmall;
+      line-height: 32px;
+      padding-left: 20px;
+      color: $fontColorLight;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 45%;
+        left: 5px;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: $backgroundColor;
+      }
+    }
+  }
+}

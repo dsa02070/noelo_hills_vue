@@ -1,0 +1,71 @@
+/* healthy care scss */
+/* mixin scss*/
+.healthycare .sub_banner {
+  background-color: #fff5d6;
+  background-image: url("./assets/img/healthycare/sub_banner.png");
+}
+
+.healthycare .baby_skin {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 30px;
+  background-image: url("./assets/img/healthycare/babyskin.png");
+  background-repeat: no-repeat;
+  background-position: 5% 85%;
+  background-size: 10%;
+}
+
+.healthycare .baby_skin .maintitle {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 35%;
+          flex: 1 0 35%;
+}
+
+.healthycare .smart_habits {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.healthycare .smart_habits .inner {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.healthycare .smart_habits .title {
+  margin-bottom: 40px;
+}
+
+.healthycare .smart_habits .text em {
+  font-size: 14px;
+}
+
+.healthycare .smart_habits .list_wrap {
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.healthycare .smart_habits .list_wrap .list .text_title {
+  font-weight: 700;
+  margin: 15px 0 5px;
+}
+
+.healthycare .smart_habits .list_wrap .list .normal_btn {
+  display: inline-block;
+  margin-top: 10px;
+}

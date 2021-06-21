@@ -19,6 +19,8 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  background: #fff;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
   z-index: 100;
 
   .inner {
@@ -26,9 +28,6 @@ header {
     justify-content: space-between;
     @include siteWidth;
   }
-
-  background: #fff;
-  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
 
   //   nav
   nav {
@@ -111,6 +110,11 @@ header {
 
         &:nth-child(3):hover::after {
           display: block;
+        }
+
+        a {
+          display: inline-block;
+          width: 100%;
         }
       }
     }

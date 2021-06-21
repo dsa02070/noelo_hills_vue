@@ -1,0 +1,11 @@
+/* fun events */
+.funevents .sub_banner {
+  background-color: #f2f1ed;
+  background-image: url("./assets/img/funevents/sub_banner.png");
+}
+
+.funevents .events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

@@ -1,0 +1,9 @@
+/* wish list scss */
+.wishlist h2 {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.wishlist .benefit {
+  border: 1px solid #ccc;
+}

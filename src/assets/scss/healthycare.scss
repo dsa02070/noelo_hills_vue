@@ -1,0 +1,60 @@
+/* healthy care scss */
+.healthycare {
+  .sub_banner {
+    background-color: #fff5d6;
+    background-image: url('./assets/img/healthycare/sub_banner.png');
+  }
+
+  .baby_skin {
+    @include siteWidth;
+    display: flex;
+    padding: 100px 30px;
+    background-image: url('./assets/img/healthycare/babyskin.png');
+    background-repeat: no-repeat;
+    background-position: 5% 85%;
+    background-size: 10%;
+
+    .maintitle {
+      flex: 1 0 35%;
+    }
+  }
+
+  .smart_habits {
+    padding: 60px 0;
+    text-align: center;
+
+    .inner {
+      @include siteWidth;
+    }
+
+    .title {
+      margin-bottom: 40px;
+    }
+
+    .text {
+      em {
+        font-size: $fontSizeSmall;
+      }
+    }
+
+    .list_wrap {
+      padding: 60px 0;
+      display: flex;
+      justify-content: space-between;
+      width: 1100px;
+      margin: 0 auto;
+
+      .list {
+        .text_title {
+          font-weight: 700;
+          margin: 15px 0 5px;
+        }
+
+        .normal_btn {
+          display: inline-block;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

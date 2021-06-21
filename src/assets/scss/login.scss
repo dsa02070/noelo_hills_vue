@@ -1,0 +1,152 @@
+/* login scss */
+.login {
+  h2 {
+    padding: 40px 0 60px;
+    text-align: center;
+  }
+
+  // form
+  form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+    input {
+      width: 500px;
+      height: 60px;
+      margin: 0;
+      font-size: $fontSizeNormal;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .check {
+      text-align: left;
+      margin: 10px 0 30px;
+
+      .id {
+        position: relative;
+        padding-left: 30px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: url('./assets/img/login/check_icon.png');
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .secure {
+        position: relative;
+        padding-left: 60px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 20%;
+          left: 36px;
+          background-image: url('./assets/img/login/bag_icon.png');
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+
+    // question
+    .question {
+      margin: 20px 0 30px;
+
+      a {
+        font-size: $fontSizeSmall;
+        text-decoration: underline;
+
+        &:first-child {
+          position: relative;
+          margin-right: 40px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 20%;
+            right: -20px;
+            width: 1px;
+            height: 14px;
+            background: $backgroundColor;
+          }
+        }
+      }
+    }
+
+    button {
+      width: 500px;
+      height: 60px;
+      font-size: $fontSizeMid;
+      font-weight: bold;
+      line-height: 60px;
+      border-radius: 30px;
+      padding: 0;
+    }
+  }
+
+  // social
+  .social {
+    width: 500px;
+    margin: 60px auto;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      width: 300px;
+      margin: 0 auto 30px;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        flex: 0 0 30%;
+        text-align: center;
+
+        a {
+          img {
+            width: 60px;
+          }
+        }
+      }
+    }
+
+    // btn_wrap
+    .btn_wrap {
+      margin-bottom: 160px;
+
+      a {
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin-bottom: 20px;
+        border-radius: 30px;
+
+        &:first-child {
+          font-size: $fontSizeMid;
+          color: $fontColorPrimary;
+          border: 1px solid $fontColorPrimary;
+          box-sizing: border-box;
+          background: #fff;
+        }
+
+        &:last-child {
+          font-size: $fontSizeMid;
+          font-weight: bold;
+          color: $fontColorPrimary;
+          background: $layoutBg;
+        }
+      }
+    }
+  }
+}

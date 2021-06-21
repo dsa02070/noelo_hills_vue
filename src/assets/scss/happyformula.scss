@@ -1,0 +1,45 @@
+/* happy formula scss*/
+
+.happy_formula {
+  .sub_banner {
+    background-color: #f2f1ed;
+    background-image: url('./assets/img/happyformula/sub_banner.png');
+  }
+
+  .title {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #fffaeb;
+
+    .text_normal {
+      margin-top: 40px;
+    }
+  }
+
+  section {
+    padding: 40px 0;
+
+    .inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .text_area {
+        padding-left: 60px;
+
+        .text_title {
+          font-size: $fontSizeBig;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  // 텍스트가 오른쪽인 section의 스타일
+  section.text_align {
+    .text_area {
+      padding-left: 0;
+      padding-right: 60px;
+    }
+  }
+}

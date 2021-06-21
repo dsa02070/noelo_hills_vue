@@ -1,0 +1,44 @@
+/* fun events */
+.funevents {
+  .sub_banner {
+    background-color: #f2f1ed;
+    background-image: url('./assets/img/funevents/sub_banner.png');
+  }
+
+  .events {
+    @include siteWidth;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+
+    .item {
+      flex: 0 0 24%;
+
+      .text_mid {
+        margin: 20px 0 10px;
+      }
+
+      .text_small {
+        &:first-of-type {
+          margin-right: 10px;
+        }
+      }
+
+      img {
+        width: 100%;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}
+
+.search {
+  margin: 60px 0 120px;
+  text-align: center;
+
+  select {
+    &:first-of-type {
+      margin-right: 10px;
+    }
+  }
+}
